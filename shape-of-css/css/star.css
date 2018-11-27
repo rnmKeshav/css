@@ -1,0 +1,41 @@
+.star-6-point {
+  width: 0px;
+  height: 0px;
+  border-width: 0px 50px 100px;
+  border-style: solid;
+  border-color: transparent transparent red;
+  position: relative;
+}
+
+.star-6-point:after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-width: 100px 50px 0px;
+  border-style: solid;
+  border-color: red transparent;
+  top: 25px;
+  left: -50px
+}
+
+.star-5-point {
+  width: 0px;
+  height: 0px;
+  border-width: 0px 50px 40px;
+  border-style: solid;
+  border-color: transparent transparent red;
+  transform: rotate(35deg);
+  position: relative;
+}
+
+.star-5-point:before {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-width: 0px 50px 40px;
+  border-style: solid;
+  border-color: transparent transparent red;
+  transform: rotate(-35deg); 
+}

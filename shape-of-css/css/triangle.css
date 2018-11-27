@@ -1,0 +1,53 @@
+.triangle-up {
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid black; 
+}
+
+.triangle-half-bottom-base {
+  width: 0px;
+  height: 0px;
+  border-bottom: 100px solid black;
+  border-right: 50px solid transparent;
+}
+
+.triangle-half-top-base {
+  width: 0px;
+  height: 0px;
+  border-top: 100px solid black;
+  border-right: 50px solid transparent;
+}
+
+.triangle-cross-right-base {
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 50px solid black;
+}
+
+.triangle-cross-bottom-base {
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 50px solid black;
+  border-right: 50px solid black;
+}
+
+.triangle-dimond .triangle-cross-top-base {
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid black;
+}
+
+.triangle-dimond .triangle-cross-bottom-base {
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid black;
+}

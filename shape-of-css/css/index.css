@@ -1,0 +1,8 @@
+@import "./triangle.css";
+@import "./abstract.css";
+@import "./rectangle.css";
+@import "./star.css";
+
+.inline-block {
+  display: inline-block;
+}

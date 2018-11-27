@@ -1,0 +1,21 @@
+.curved-tail-arrow {
+  width: 0px;
+  height: 0px;
+  border-top: 9px solid transparent;
+  border-right: 9px solid red;
+  transform: rotate(20deg);
+  position: relative;
+  margin: 12px;
+}
+
+.curved-tail-arrow::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-top: 3px solid red;
+  border-radius: 100% 0% 0% 0%;
+  transform: rotate(55deg); 
+  top: -13px;
+  left: -13px;
+}
