@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(images/bg.jpg);
+}
+
+.container {
+  display: flex;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px #000;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 20%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.8), transparent);
+}
+
+.card .poster {
+  width: 100%;
+  height: 100%;
+}
+
+.card .details {
+  position: absolute;
+  bottom: -155px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.8) 60%, transparent);
+  padding: 20px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.card:hover .details {
+  bottom: 0;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  filter: blur(2px);
+}
+
+.card:hover .bg{
+  visibility: visible;
+  opacity: 1;
+}
+
+.details .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.details .director {
+  font-size: 14px;
+  color: springgreen;
+  font-weight: bold;
+}
+
+.rating {
+  color: gold;
+  margin: 8px 0px;
+}
+
+.genre {
+  margin: 8px 0px 0px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 5px 12px;
+  display: inline-block;
+  border-radius: 2px;
+  margin: 2px;
+}
+
+.adventure {
+  background-color: #dd3434;
+}
+
+.sci-fi {
+  background-color: #4d4de1;
+}
+
+.drama {
+  background-color: darkseagreen;
+}
+
+.action {
+  background-color: #00D0EB;
+}
+
+.info {
+  margin: 20px 0px;
+  font-size: 14px;
+  color: aliceblue;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cast {
+  color: yellow;
+  font-weight: bold;
+}
+.stars {
+  display: flex;
+}
+
+.stars img {
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 5px;
+  border: 1px solid #fff;
+}
