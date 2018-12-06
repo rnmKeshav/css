@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8ff;
+}
+
+.container {
+  margin: 100px auto;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 450px;
+  grid-gap: 40px
+}
+
+.card {
+  position: relative;
+  background-color: rgba(0,0,0,0.7);
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.6);
+  border-radius: 5px;
+}
+
+.img-box {
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.card:hover .img {
+  opacity: 0.5;
+}
+
+.content {
+  position: absolute;
+  bottom: -100%;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 60%;
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  bottom: 0;
+}
+
+.container .card:nth-child(1) .content {
+  background: linear-gradient(0deg, #000, transparent);
+}
+
+.container .card:nth-child(2) .content {
+  background: linear-gradient(0deg, #c38686, transparent);
+}
+
+.container .card:nth-child(3) .content {
+  background: linear-gradient(0deg, #4380b4, transparent);
+}
+
+
+.title {
+  margin: 12px 0px 0px;
+  color: ivory;
+}
+
+.header {
+  margin: 0px 0px;
+  color: aqua;
+}
+
+.details {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.5s;
+  margin: 20px 0px;
+  position: relative;
+  color: gold;
+  top: 0px;
+}
+
+.tag {
+
+}
+.movie {
+  padding: 5px 10px;
+  display: inline-block;
+  font-weight: bold;
+  color: darkslategray;
+  background-color: #6cf2d3;
+  border-radius: 2px;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social {
+  color: wheat;
+  font-size: 20px;
+}
